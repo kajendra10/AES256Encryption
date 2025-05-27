@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AES-256 Encryption</string>
+    <string name="enter_note">Enter note</string>
+    <string name="save_note">Save Note</string>
+    <string name="load_note">Load Note</string>
+    <string name="decrypted_note_will_appear_here">Decrypted note will appear here…</string>
+</resources>

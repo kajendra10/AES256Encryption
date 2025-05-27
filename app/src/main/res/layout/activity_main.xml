@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="@string/enter_note"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:textColorHint="#546E7A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_note"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="@+id/inputNote"
+        app:layout_constraintTop_toBottomOf="@+id/inputNote" />
+
+    <Button
+        android:id="@+id/loadButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/load_note"
+        app:layout_constraintBottom_toBottomOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="@+id/inputNote"
+        app:layout_constraintTop_toTopOf="@+id/saveButton" />
+
+    <TextView
+        android:id="@+id/decryptedNote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/loadButton"
+        app:layout_constraintStart_toStartOf="@+id/saveButton"
+        android:text="@string/decrypted_note_will_appear_here"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@+id/inputNote" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
